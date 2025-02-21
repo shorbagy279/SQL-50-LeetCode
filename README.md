@@ -27,3 +27,17 @@ where population >=  25000000  or  area>=  3000000
 where author_id = viewer_id
 order by author_id asc
 ```
+
+[1683. Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)
+```sql
+select tweet_id
+from Tweets
+where  length(content)>15
+```
+[1378. Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/)
+```sql
+select u.unique_id ,e.name
+from Employees e
+left  join EmployeeUNI u
+on e.id = u.id
+```
