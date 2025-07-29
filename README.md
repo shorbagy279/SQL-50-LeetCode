@@ -61,3 +61,11 @@ on V.visit_id = T.visit_id
 where transaction_id is  null
 group  by customer_id
 ```
+[197. Rising Temperature](https://leetcode.com/problems/rising-temperature/)
+```sql
+select w1.id as Id from Weather as w1
+join Weather as w2
+where     #DATEDIFF(year, '2017/08/25', '2011/08/25')
+ DATEDIFF( w1.recordDate, w2.recordDate) =1 and w1.temperature > w2.temperature ;
+```
+
